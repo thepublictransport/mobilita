@@ -97,7 +97,7 @@ class _SearchInputPageWideState extends State<SearchInputPageWide> {
               ),
             ),
           ),
-          Container(
+          /*Container(
             padding: EdgeInsets.fromLTRB(5, MediaQuery.of(context).padding.top + 10, 5, 0),
             alignment: Alignment.center,
             child: Card(
@@ -128,7 +128,7 @@ class _SearchInputPageWideState extends State<SearchInputPageWide> {
                 ),
               )
             )
-          )
+          )*/
         ],
       ),
     );

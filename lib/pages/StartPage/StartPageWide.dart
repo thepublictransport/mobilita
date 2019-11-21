@@ -199,6 +199,8 @@ class _StartPageWideState extends State<StartPageWide> {
                                     backgroundColor: Colors.black,
                                     child: Icon(Icons.search, color: Colors.white),
                                     onPressed: () {
+                                      if (from_search == null) return;
+                                      if (to_search == null) return;
                                       Navigator.of(context).push(MaterialPageRoute(builder: (context) => ResultPageWide(
                                         from_search: from_search,
                                         to_search: to_search,
