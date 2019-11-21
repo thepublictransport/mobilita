@@ -83,13 +83,13 @@ class _StartPageWideState extends State<StartPageWide> {
                             SizedBox(
                                 height: 50,
                                 width: 50,
-                                child: Image.network("https://avatars3.githubusercontent.com/u/44241397")
+                                child: Image.network("https://avatars2.githubusercontent.com/u/58031557")
                             ),
                             SizedBox(
                               width: 10,
                             ),
                             Text(
-                                "Mobilita",
+                                "Mobilita (Alpha)",
                                 style: TextStyle(
                                   fontSize: 30,
                                   fontFamily: 'Alata'
