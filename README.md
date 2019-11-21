@@ -1,10 +1,10 @@
 # Project Mobilita
 
-Multimodal Search, Cross-Platform, Modern, Revolutionary
+Multimodal Search, Desktop & Web, Modern, Revolutionary
 
 ## Info
 
-Mobilita is kind of from italian which means "mobility".
+Mobilita is kinda from italian which means "mobility".
 This won't replace "The Public Transport" at all. Both projects will be continued. TPT is like our swiss army knife for traveling. 
 
 The approach of Mobilita is kinda different.
@@ -23,7 +23,6 @@ Things we target on:
 - Multimodal search of trips
 - Get your best and cheapest was from A to B
 - Using The Public Transport APIs and Services
-- Creating Mobilita Service for everyone to use
 
 If we think our codebase is ready, we will release anything to the public.
 
@@ -31,12 +30,10 @@ If we think our codebase is ready, we will release anything to the public.
 
 We target to support these platforms:
 
-- Android
-- iOS
-- Web
 - Windows
-- MacOS
 - Linux
+- MacOS
+- Web (done)
 
 ## License
 
