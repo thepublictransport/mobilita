@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobilita/pages/MobilePage/MobilePage.dart';
 import 'package:mobilita/pages/StartPage/StartPageWide.dart';
 
 void main() {
@@ -11,6 +12,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Mobilita',
+      initialRoute: '/',
+      routes: {
+        '/mobile': (context) => MobilePage(),
+      },
       theme: ThemeData(
         // This is the theme of your application.
         //

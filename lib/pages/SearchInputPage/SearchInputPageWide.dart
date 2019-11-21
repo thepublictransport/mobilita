@@ -52,7 +52,7 @@ class _SearchInputPageWideState extends State<SearchInputPageWide> {
                 ),
                 textFieldConfiguration: TextFieldConfiguration(
                     controller: _typeAheadController,
-                    autofocus: false,
+                    autofocus: true,
                     autocorrect: true,
                     style: TextStyle(
                         fontSize: 18,

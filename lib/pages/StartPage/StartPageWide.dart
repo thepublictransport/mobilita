@@ -1,3 +1,5 @@
+import 'dart:html' as html;
+
 import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:mobilita/animations/ShowUp.dart';
@@ -8,6 +10,7 @@ import 'package:mobilita/components/SearchBar.dart';
 import 'package:mobilita/pages/ResultPage/ResultPageWide.dart';
 import 'package:mobilita/pages/SearchInputPage/SearchInputPageWide.dart';
 import 'package:mobility_framework/backend/models/main/SuggestedLocation.dart';
+import 'package:user_agent/user_agent.dart';
 
 class StartPageWide extends StatefulWidget {
   StartPageWide({Key key}) : super(key: key);
@@ -54,6 +57,15 @@ class _StartPageWideState extends State<StartPageWide> {
   GlobalKey<AdvancedSwitchListTileState> busSwitch = GlobalKey();
   GlobalKey<AdvancedSwitchListTileState> ferrySwitch = GlobalKey();
   GlobalKey<AdvancedSwitchListTileState> ondemandSwitch = GlobalKey();
+
+  @override
+  void initState() {
+    var ua = new UserAgent(html.window.navigator.userAgent);
+    if (ua.isAndroidPhone || ua.isWindowsPhone || ua.isBlackberryPhone) {
+      Navigator.pushNamed(context, "/mobile");
+    }
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
